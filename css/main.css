@@ -1,0 +1,246 @@
+/* Fonts  */
+/* 	https://www.google.com/fonts#UsePlace:use/Collection:Montserrat */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700i,900');
+
+@font-face {
+    font-family: seventiesPrinted;
+    src: url(Seventies Printed.otf);
+}
+
+/*  General CSS  */
+
+body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.header-wrapper {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.main {
+    height: 100vh;
+    width: 300vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transform: translateX(-100vw);
+    transition: all 0.3s ease;
+}
+
+.main.summer {
+    transform: translateX(0);
+}
+
+.main.winter {
+    transform: translateX(-200vw);
+}
+
+.header-summer {
+    height: 100vh;
+    width: 100vw;
+    background-color: #151E3B;
+    background-image: url(../images/summer-sky.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header-winter {
+    height: 100vh;
+    width: 100vw;
+    background-color: #151E3B;
+    background-image: url(../images/winter-sky.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+h1 {
+    display: block;
+    padding-top: 325px; 
+    font-family: "seventiesPrinted";
+    font-size: 200px;
+    color: #FFFFFF;
+    
+}
+
+ul {
+    display: block;
+    margin-top: 50px;
+}
+
+/* Buttons */
+
+.btn-default {
+    display: block;
+    /* margin-top: 50px; */
+    border-width: 3px;
+    border-color: #FFFFFF;
+    height: 100px;
+    width: 250px;
+    background-color: transparent;
+    font-size: 32px;
+    font-family: "montserrat"; 
+    /* padding: 0 20px; */
+    color: #FFFFFF;
+}
+
+.btn-primary {
+    display: block;
+    background-color: #151E3B;
+    height: 100px;
+    width: 250px;
+    font-size: 32px;
+    font-family: "montserrat"; 
+    padding: 0 20px;
+    color: #FFCD05;
+}
+
+.btn-center {
+    margin: 0 auto;
+}
+
+.cygnus-btn {
+    display: inline-block;
+    margin-top: 350px;
+}
+
+.draco-btn {
+    display: inline-block;
+    margin-left: 75px;
+    
+}
+
+.ursa-major-btn {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.leo-btn {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.home-btn {
+    display: block;
+    margin-top: 300px;
+    margin-left: 100px;
+}
+
+/* welcome section */
+
+h2 {
+    display: block;
+    margin-top: 50px;
+    font-family: "seventiesPrinted";
+    font-size: 100px;
+}
+
+p.intro {
+    font-family: "montserrat";
+    font-size: 28px;
+    font-weight: 500;
+}
+
+/* navigate section */
+
+h3 {
+    display: block;
+    margin: 50px;
+    font-family: "seventiesPrinted";
+    font-size: 70px;
+    color: #FFCD05;
+}
+
+p.navigate {
+    display: block;
+    margin: 50px;
+    font-family: "montserrat";
+    font-size: 20px;
+}
+
+/* star section */
+
+p.star {
+    display: block;
+    margin: 50px;
+    font-family: "montserrat";
+    font-size: 20px;
+}
+
+h5.modal-title {
+    font-family: "montserrat";
+    color: #FFCD05;
+}
+
+.modal-header {
+    background-color: #000000;
+}
+
+.modal-body {
+    background-color: #000000;
+}
+
+/* news section */
+
+caption {
+    font-family: "seventiesPrinted";
+    font-size: 72px;
+    color: #151E3B;
+}
+
+th.table-header {
+    font-family: "seventiesPrinted";
+    font-size: 64px;
+    color: #151E3B;
+    padding-right: 75px;
+}
+
+th.date {
+    font-family: "montserrat";
+    font-size: 24px;
+    font-weight: 400;
+    color: #333366;
+}
+
+p.title {
+    font-family: "montserrat";
+    font-size: 24px;
+    font-weight: 400;
+    color: #333366;
+}
+
+p.table-copy {
+    font-family: "montserrat";
+    font-size: 20px;
+    color: #000000;
+}
+
+img.picture {
+    padding-left: 50px; 
+}
+
+/* footer */
+
+footer {
+    background-color: #9B9B9B;
+}
+
+h4 {
+    font-family: "montserrat";
+    font-size: 18px;
+    color: #4A4A4A;
+    margin: 25px;
+}
